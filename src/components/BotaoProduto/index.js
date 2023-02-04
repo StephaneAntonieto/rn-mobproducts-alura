@@ -1,6 +1,10 @@
-import React from "react";
-import { View } from "react-native";
+import { TouchableOpacity, Text } from "react-native";
+import styles from "./styles";
 
-export default function BotaoProduto() {
-  return <View></View>;
+export function BotaoProduto({ onPress }) {
+  return (
+    <TouchableOpacity style={styles.botao} onPress={onPress}>
+      <Text style={styles.textoBotao}>+</Text>
+    </TouchableOpacity>
+  );
 }

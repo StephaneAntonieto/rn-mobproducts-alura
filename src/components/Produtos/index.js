@@ -1,6 +1,11 @@
-import React from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
+import styles from "./styles";
 
-export default function Produtos() {
-  return <View></View>;
+export default function Produto({ nome, preco }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.texto}>{nome}</Text>
+      <Text style={styles.texto}>R$ {preco}</Text>
+    </View>
+  );
 }
